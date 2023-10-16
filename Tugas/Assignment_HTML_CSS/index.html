@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas HTML & CSS </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;200&family=Roboto:wght@400;500;700;900&display=swap');
+        
+        
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .layer {
+            background-color: #FF9C1A;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+        }
+
+        .landing-page {
+            width: 1440px;
+            height: 1024px;
+            background: #F2F5F9;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 2fr);
+        }      
+
+        .name {
+            color: #0B0909;
+            font-family: Raleway;
+            font-size: 28.42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35.525px; /* 125% */
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .career-details {
+            color: rgba(11, 9, 9, 0.50);
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px; /* 250% */
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            padding: 20px 0px;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo1 {
+            color: #EC1B09;
+            font-family: Pacifico;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            }
+
+        .logo2 {
+            color: #FF9C1A;
+            font-family: Pacifico;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;    
+            }
+
+        .profile-detail {
+            width: 400px;
+            height: 852px;
+            flex-shrink: 0;
+            filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.00));
+            color: #FFFFFF; 
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        
+        }
+
+        .profile-card {
+            display: flex;
+            width: 400px;
+            height: 852px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+            padding: 25px;
+            flex-direction: column;
+            
+        
+        }
+
+        .profile-picture {
+            width:200px;
+            height: 200px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: url(./beatrice.jpg), lightgray 50% / cover no-repeat;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            flex-direction: column;
+        }
+
+        .nav-bar {
+            display: flex;
+            width: 375px;
+            flex-direction: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            position: relative;
+            float: left;
+
+        }
+
+    
+        .social-media-icons-1 {
+            display: flex;
+            flex-direction: row;
+            border-radius: 6px;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        
+        .contact-card { width: 350px;
+            height: 350px;
+            flex-shrink: 0;
+            border-radius: 40px;
+            background: #F2F5F9;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+
+
+        .about-me-card {
+            width: 820px;
+            height: 700px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: #FFF;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+            float: right;
+            display: block;
+            position: relative;
+            top: 0px;
+        }
+
+        .img {
+            margin-top: 45px;
+            margin-left: 80px;
+            margin-right: 25px
+            ;
+        }
+
+
+
+
+    </style>
+</head>
+<body  class="layer">
+<section class="landing-page">
+
+    <!-- My Portofolio -->
+<section>
+<div class="logo">
+    <h1><span class="logo1">My</span><span class="logo2">Portofolio</span></h1>
+</div>
+</section>
+
+    <section class="profile-card">
+    <img src ="./beatrice.jpg" class="img"alt="not found" width="200px" height="200px" flex-shrink="0">
+    <h1 class="name">Arif Ramadhan</h1>
+    <p class="career-details">FullStack developer</p>
+    <section class="social-media-icons">
+        <ul class="social-media-icons-1">
+            <li><img src="fb_icon.svg" alt=""></style><a href="facebook.com"></a></li>
+            <li><img src="linkedin_icon.svg" alt=""><a href="linkedin.com"></a></li>
+            <li><img src="twitter_icon.svg" alt=""><a href="twitter.con"></a></li>
+            <li><img src="github_icon.svg" alt=""><a href="github.com"></a></li>
+        </ul>
+    </section>   
+
+        <section class="contact-card">
+            <i><img src="mobile_icon.svg" alt="" class="icon"><a href="#"></a>    phone</i>
+            <i><img src="email_icon.svg" alt=""><a href="#"></a>    email</i>
+            <i><img src="location_icon.svg" alt=""><a href="#"></a>    location</i>
+            <i><button>Download Resume</button></i>
+        </section>
+    
+    </section>
+
+
+<section class="nav-bar">
+    <nav class="nav-card">
+        <ul>
+            <i><img src="home_icon.svg" alt=""><a href="#"></a>Home</i>
+            <i><img src="resume_icon.svg" alt=""><a href="#"></a>Resume</i>
+            <i><img src="contact_icon.svg" alt=""><a href="#"></a>Contact</i>
+        </ul>
+    </nav>
+</section>
+
+<section class="about-me-card">
+        <h1>
+            About me
+        </h1>
+
+        <p>Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile
+        full-stack developer with a keen interest in exploring the latest cutting-edge technologies.
+        My journey in the world of web development has been nothing short of exhilarating, and 
+        I constantly strive to enhance my skills and embrace emerging trends in the industry.
+        </p>
+
+        <h1>
+            What I do
+        </h1>
+
+        <div>
+            <ul>
+                <li><img src="code_icon.svg" alt=""><h1>Web Development</h1>
+                    <p>As a developer, I find myself most 
+                    captivated by the power and flexibility of 
+                    NEXT.js. I'm always eager to dive into new
+                    projects that leverage NEXT.js and 
+                    discover innovative ways to create fast, 
+                    scalable, and user-friendly applications.
+                    </p>
+                </li>
+                <li><img src="app_icon.svg" alt=""><h1>App Development</h1>
+                    <p>With a focus on user-centric design and
+                        cutting-edge technologies, I thrive on 
+                        building intuitive and efficient apps 
+                        that make a positive impact on people's 
+                        lives. Let's turn ideas into reality and 
+                        shape the future together.
+                    </p>
+                </li>
+                <li><img src="ux_icon.svg" alt=""><h1>UI/UX Details</h1>
+                    <p>Crafting visually appealing and intuitive user
+                        interfaces that offer a user 
+                        experience is something I'm truly fanatic 
+                        about.
+                    </p>
+                </li>
+                <li><img src="mentor_icon.svg" alt=""><h1>Mentorship</h1>
+                    <p>I have also found great joy in sharing my 
+                        knowledge with others. Being a technical 
+                        mentor allows me to give back to the 
+                        community that has supported me 
+                        throughout my career. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+</section>
+</section>
+</section>
+</Section>
+</section>
+</body>
+</html>
+

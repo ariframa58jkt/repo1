@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: medium; 
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: .75rem  .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: .75rem;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(199, 246, 91);
+    transition: all 0.36 ease;
+}
+
+.link a:hover::after{
+    width: 75%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(199, 246, 91);
+    color: white;
+}
+
+container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+header {
+    position: relative;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2px;
+    background-color: whitesmoke;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+header .content h1 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+header .content p {
+    margin-bottom: 2rem;
+}
+
+header .image {
+    position: relative;
+}
+
+header .image img {
+    max-width: 800px;
+}
