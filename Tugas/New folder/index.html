@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;200&family=Roboto:wght@400;500;700;900&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;s
+    }
+
+    .layer {
+        background-color: #FF9C1A;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .landing-page {
+        width: 1440px;
+        height: 1024px;
+        background: #F2F5F9;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+    }
+
+    .header {
+        display: flex;
+        width: 1240px;
+        height: 104px;
+        padding: 44px 0px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .my-style {
+        color: #EC1B09;
+        font-family: Pacifico;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 5rem;
+    }
+
+    .portofolio-style {
+        color: #FF9C1A;
+        font-family: Pacifico;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .profile-detail {
+        width: 400px;
+        height: 852px;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.00));
+    }
+
+    .profile-card {
+        display: flex;
+        width: 400px;
+        height: 852px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        color: FFFFFF;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+</style>
+<body class="layer">
+<div class="landing-page">    
+<div class="header">
+    <h1><span class="my-style">My</span><span class="portofolio-style">Portofolio</span></h1>
+</div>
+<div class="container">
+    <div class="profile-detail"><div class="profile-card">
+        <div class="profile-picture"><img src="beatrice.jpg" alt=""></div>
+        <div class="name"><H1>Arif Ramadhan</H1></div>
+        <div class="career-details">FullStack developer</div>
+        <div class="social-media-icons">
+            <div><a href="www.faceboo.com"></a><img src="fb_icon.svg" alt=""></div>
+            <div><a href="www.linkedin.com"></a><img src="linked_icon.svg" alt=""></div>
+            <div><a href="twitter.com"></a><img src="twitter_icon.svg" alt=""></div>
+            <div><a href="github.com"></a><img src="github" alt=""></div>
+        </div>
+    </div></div>
+    <div><div class="navbar"></div><div class="about-me-card"></div></div>
+</div>
+</div>
+</body>
+</html>
